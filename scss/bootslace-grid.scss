@@ -1,6 +1,5 @@
 @import "../node_modules/bootstrap/scss/mixins/banner";
 @include bsBanner(Grid);
-@include bsBanner(Utilities);
 
 $include-column-box-sizing: true !default;
 
@@ -9,16 +8,12 @@ $include-column-box-sizing: true !default;
 @import "../node_modules/bootstrap/scss/variables-dark";
 @import "../node_modules/bootstrap/scss/maps";
 
-@import "../node_modules/bootstrap/scss/mixins";
-@import "../node_modules/bootstrap/scss/utilities";
-@import "../node_modules/bootstrap/scss/root";
+@import "../node_modules/bootstrap/scss/mixins/breakpoints";
+@import "../node_modules/bootstrap/scss/mixins/container";
+@import "../node_modules/bootstrap/scss/mixins/grid";
+@import "../node_modules/bootstrap/scss/mixins/utilities";
 
 @import "../node_modules/bootstrap/scss/vendor/rfs";
-@import "../node_modules/bootstrap/scss/helpers";
 
 @import "../node_modules/bootstrap/scss/containers";
 @import "../node_modules/bootstrap/scss/grid";
-
-// Utilities
-@import "../node_modules/bootstrap/scss/utilities";
-@import "../node_modules/bootstrap/scss/utilities/api";

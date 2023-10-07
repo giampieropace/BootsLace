@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html lang="en" class="sl-theme-dark">
+<html lang="en">
+  <!-- add class="sl-theme-dark" for dark theme -->
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BootsLace test</title>
 
-    <link rel="stylesheet" href="../dist/css/bootslace-dark.min.css" />
+    <link rel="stylesheet" href="../dist/css/bootslace-light.min.css" />
+
     <style>
       :not(:defined) {
         visibility: hidden;
@@ -27,15 +29,15 @@
     </style>
 
     <script type="module" data-shoelace="../dist/shoelace">
+      import "../dist/shoelace/components/icon/icon.js";
       import "../dist/shoelace/components/button/button.js";
       import "../dist/shoelace/components/card/card.js";
       import "../dist/shoelace/components/details/details.js";
     </script>
   </head>
   <body>
-    <!-- Card -->
     <div class="container">
-      <div class="row justify-content-center align-items-center g-2">
+      <div class="row gx-2 gy-2 row-cols-1 row-cols-md-2">
         <div class="col">
           <sl-card class="card-overview" style="width: 100%">
             <img
@@ -54,8 +56,8 @@
             </div>
           </sl-card>
         </div>
-        <div class="col m-3">
-          <sl-icon name="body-text"></sl-icon>
+        <div class="col">
+          <p><sl-icon name="body-text"></sl-icon></p>
           <br />
           <sl-button variant="default" outline>Default</sl-button>
           <sl-button variant="primary" outline>Primary</sl-button>
@@ -80,5 +82,9 @@
         </div>
       </div>
     </div>
+    <footer class="my-6"></footer>
+    <script type="module" data-shoelace="../dist/shoelace">
+      // import "../dist/shoelace/components/split-panel/split-panel.js";
+    </script>
   </body>
 </html>
